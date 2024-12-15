@@ -15,10 +15,10 @@ from threading import Lock
 from filelock import FileLock  # For file locking
 
 # Google Drive API Scopes
-SCOPES = ['https://www.googleapis.com/auth/drive.readonly']
+SCOPES = ['https://www.googleapis.com']
 
 # Replace with your actual bot token
-TOKEN = '7833803789:AAHNccq5WyeC_DO9MJvwsMeA5zC_D9UEzwc'  # Replace with your actual bot token
+TOKEN = ''  # Replace with your actual bot token
 
 # Enable logging for debugging
 logging.basicConfig(level=logging.WARNING)
@@ -53,7 +53,7 @@ def send_message(chat_id, message):
 # Authenticate Google Drive API
 def authenticate():
     global creds
-    creds_file_path = r'/home/HIMANSHU2005P/mysite/client_secrets.json'  # Path to your credentials file
+    creds_file_path = r'n'  # Path to your credentials file
 
     if not os.path.exists(creds_file_path):
         logging.error(f"Error: {creds_file_path} not found!")
